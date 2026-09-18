@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -135,7 +134,7 @@ a{color:inherit;}
   padding:2px 7px; border-radius:5px; margin-left:2px;
 }
 
-.stats{display:grid; grid-template-columns:repeat(5,1fr); gap:2px; margin-top:36px; background:var(--line); border-radius:var(--radius); overflow:hidden;}
+.stats{display:grid; grid-template-columns:repeat(6,1fr); gap:2px; margin-top:36px; background:var(--line); border-radius:var(--radius); overflow:hidden;}
 .stat{background:var(--surface); padding:18px 16px;}
 .stat b{display:block; font-family:'Archivo'; font-weight:900; font-size:clamp(20px,2.6vw,28px);}
 .stat span{font-size:12px; color:var(--ink-soft); font-weight:600;}
@@ -172,8 +171,8 @@ a{color:inherit;}
 
 /* site grid (3 columns x 2 rows) */
 .site-grid{
-  margin-top:22px; max-width:900px; display:grid;
-  grid-template-columns:repeat(3,1fr); gap:12px;
+  margin-top:22px; max-width:660px; display:grid;
+  grid-template-columns:repeat(3,1fr); gap:10px;
 }
 .grid-item{
   display:block; text-decoration:none; color:var(--ink); border-radius:11px; overflow:hidden;
@@ -257,7 +256,7 @@ footer{padding:40px 0 60px; color:var(--ink-soft); font-size:13px; max-width:700
   .rail{display:none;}
   .topbar, .chip-strip{display:flex;}
   .main{padding:0 20px 80px;}
-  .stats{grid-template-columns:repeat(2,1fr);}
+  .stats{grid-template-columns:repeat(3,1fr);}
 }
 @media (max-width:480px){
   .hero{padding:36px 0 30px;}
@@ -271,12 +270,12 @@ footer{padding:40px 0 60px; color:var(--ink-soft); font-size:13px; max-width:700
 <div class="topbar">
   <span class="brand">Plano Diretor Curitiba <span class="mono" style="font-weight:500;color:var(--ink-soft)">· DFBW 2026</span></span>
 </div>
-<nav class="chip-strip" aria-label="Índice (mobile)"><a href="#q1" data-ids="q1,q2,q3,q4" class="chip" style="--dot:var(--blue)">Ficha do Projeto</a><a href="#q5" data-ids="q5" class="chip" style="--dot:var(--orange)">Site do Projeto</a><a href="#q6" data-ids="q6" class="chip" style="--dot:var(--yellow)">Descrição</a><a href="#q7" data-ids="q7,q8,q9,q10" class="chip" style="--dot:var(--green)">Critérios de Avaliação</a><a href="#q11" data-ids="q11" class="chip" style="--dot:var(--pink)">Mercado & IA</a><a href="#q16" data-ids="q16" class="chip" style="--dot:var(--lime)">Conteúdo Extra</a></nav>
+<nav class="chip-strip" aria-label="Índice (mobile)"><a href="#q1" data-ids="q1" class="chip" style="--dot:var(--blue)">Ficha do Projeto</a><a href="#q5" data-ids="q5" class="chip" style="--dot:var(--orange)">Site do Projeto</a><a href="#q6" data-ids="q6" class="chip" style="--dot:var(--yellow)">Descrição</a><a href="#q7" data-ids="q7,q8,q9,q10" class="chip" style="--dot:var(--green)">Critérios de Avaliação</a><a href="#q11" data-ids="q11" class="chip" style="--dot:var(--pink)">Mercado & IA</a><a href="#q16" data-ids="q16" class="chip" style="--dot:var(--lime)">Conteúdo Extra</a></nav>
 
 <div class="shell">
   <aside class="rail" aria-label="Índice da inscrição">
     <p class="rail-brand">Plano Diretor Curitiba<small>Design For a Better World Award · 2026</small></p>
-    <nav class="rail-nav"><a class="rail-group-link" href="#q1" data-ids="q1,q2,q3,q4" style="--dot:var(--blue)">Ficha do Projeto</a><a class="rail-group-link" href="#q5" data-ids="q5" style="--dot:var(--orange)">Site do Projeto</a><a class="rail-group-link" href="#q6" data-ids="q6" style="--dot:var(--yellow)">Descrição</a><a class="rail-group-link" href="#q7" data-ids="q7,q8,q9,q10" style="--dot:var(--green)">Critérios de Avaliação</a><a class="rail-group-link" href="#q11" data-ids="q11" style="--dot:var(--pink)">Mercado & IA</a><a class="rail-group-link" href="#q16" data-ids="q16" style="--dot:var(--lime)">Conteúdo Extra</a></nav>
+    <nav class="rail-nav"><a class="rail-group-link" href="#q1" data-ids="q1" style="--dot:var(--blue)">Ficha do Projeto</a><a class="rail-group-link" href="#q5" data-ids="q5" style="--dot:var(--orange)">Site do Projeto</a><a class="rail-group-link" href="#q6" data-ids="q6" style="--dot:var(--yellow)">Descrição</a><a class="rail-group-link" href="#q7" data-ids="q7,q8,q9,q10" style="--dot:var(--green)">Critérios de Avaliação</a><a class="rail-group-link" href="#q11" data-ids="q11" style="--dot:var(--pink)">Mercado & IA</a><a class="rail-group-link" href="#q16" data-ids="q16" style="--dot:var(--lime)">Conteúdo Extra</a></nav>
   </aside>
 
   <main class="main">
@@ -309,28 +308,20 @@ footer{padding:40px 0 60px; color:var(--ink-soft); font-size:13px; max-width:700
         <div class="stat"><b>~27.000</b><span>votos registrados</span></div>
         <div class="stat"><b>~9.200</b><span>contribuições totais</span></div>
         <div class="stat"><b>~3.500</b><span>pessoas ouvidas presencialmente</span></div>
+        <div class="stat"><b>~250</b><span>revisões do Dr. Ca PI.Á</span></div>
       </div>
     </section>
 
     <section id="q1" class="sheet small-sheet" style="--dot:var(--blue)">
-      <p class="tag"><span class="num">01</span>Categoria desejada</p>
-      <h2>Programas, Iniciativas e Metodologias</h2>
-      <p class="field-note">Subcategoria: Programas, Iniciativas e Metodologias</p>
-    </section>
-
-    <section id="q2" class="sheet small-sheet" style="--dot:var(--blue)">
-      <p class="tag"><span class="num">02</span>Nome do projeto</p>
-      <p class="field-value">Plano Diretor de Curitiba: metodologias participativas e pedagogia urbana</p>
-    </section>
-
-    <section id="q3" class="sheet small-sheet" style="--dot:var(--blue)">
-      <p class="tag"><span class="num">03</span>Empresa ou instituição</p>
-      <p class="field-value">IPPUC — Instituto de Pesquisa e Planejamento Urbano de Curitiba</p>
-    </section>
-
-    <section id="q4" class="sheet small-sheet" style="--dot:var(--blue)">
-      <p class="tag"><span class="num">04</span>Designers, criativos e arquitetos</p>
-      <ul class="team-list"><li>Ana Jayme</li><li>Thomaz Ramalho</li><li>Rafael Mueller</li><li>Cassius Busemeyer</li><li>Noelia Aguirre</li><li>Pedro Sorrentino</li><li>Maria Ruchaud</li><li>Anna Franco</li><li>Cesar Cubas</li><li>Raquel Sales</li><li>Enzo Cuenca</li><li>Luiz Horst</li><li>Nathaly Zalkoski</li></ul>
+      <p class="tag"><span class="num">01</span>Ficha do Projeto</p>
+      <h2>Quem está por trás do projeto</h2>
+      <dl class="fact-list">
+        <div class="fact-row"><dt>Categoria</dt><dd>Programas, Iniciativas e Metodologias<br><span style="color:var(--ink-soft); font-weight:500;">Subcategoria: Programas, Iniciativas e Metodologias</span></dd></div>
+        <div class="fact-row"><dt>Nome do projeto</dt><dd>Plano Diretor de Curitiba: metodologias participativas e pedagogia urbana</dd></div>
+        <div class="fact-row"><dt>Empresa/instituição</dt><dd>IPPUC — Instituto de Pesquisa e Planejamento Urbano de Curitiba</dd></div>
+        <div class="fact-row"><dt>Designers, criativos e arquitetos</dt><dd><ul class="team-list"><li>Ana Jayme</li><li>Thomaz Ramalho</li><li>Rafael Mueller</li><li>Cassius Busemeyer</li><li>Noelia Aguirre</li><li>Pedro Sorrentino</li><li>Maria Ruchaud</li><li>Anna Franco</li><li>Cesar Cubas</li><li>Raquel Sales</li><li>Enzo Cuenca</li><li>Luiz Horst</li><li>Nathaly Zalkoski</li></ul></dd></div>
+        <div class="fact-row"><dt>Demais envolvidos</dt><dd><a href="https://bit.ly/pd-pessoas" target="_blank" rel="noopener">Ver lista completa <span class="mono" style="font-size:12px; color:var(--ink-soft);">bit.ly/pd-pessoas</span> ↗</a></dd></div>
+      </dl>
     </section>
 
     <section id="q5" class="sheet" style="--dot:var(--orange)">
