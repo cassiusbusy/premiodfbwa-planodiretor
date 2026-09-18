@@ -10,13 +10,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 
-<!-- Google Analytics (GA4). TODO: troque G-XXXXXXXXXX pelo seu Measurement ID real em AMBOS os lugares abaixo. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<!-- Google Analytics (GA4). TODO: troque G-SJ1KGLEHSS pelo seu Measurement ID real em AMBOS os lugares abaixo. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ1KGLEHSS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
+  gtag('config', 'G-SJ1KGLEHSS');
 </script>
 
 <style>
@@ -152,14 +152,19 @@ a{color:inherit;}
 .hero-video .video-caption{font-size:12px; color:var(--ink-soft); font-style:italic; padding:10px 16px 16px;}
 .hero-side{display:flex; flex-direction:column; gap:10px; justify-content:center;}
 .minuta-card{
-  display:flex; flex-direction:column; gap:5px; text-decoration:none; color:var(--ink);
-  background:var(--surface-2); border:1.5px solid var(--blue); border-radius:14px; padding:15px 18px;
-  transition:transform .12s;
+  display:flex; flex-direction:column; gap:8px; color:var(--ink);
+  background:var(--surface-2); border:1.5px solid var(--blue); border-radius:14px; padding:17px 18px;
 }
-.minuta-card:hover{transform:translateY(-1px);}
-.minuta-card strong{font-size:15px; font-weight:800;}
-.minuta-card span{font-size:13px; color:var(--ink-soft);}
+.minuta-card strong{font-size:16px; font-weight:800;}
+.minuta-card p{font-size:13px; color:var(--ink-soft); margin:0; line-height:1.45;}
+.minuta-card .pw{font-size:12.5px; color:var(--ink-soft);}
 .minuta-card b{font-family:'IBM Plex Mono'; background:var(--yellow); color:#1a1200; padding:1px 6px; border-radius:5px;}
+.minuta-btn{
+  align-self:flex-start; margin-top:2px; display:inline-flex; align-items:center; gap:6px;
+  font:700 13.5px 'Public Sans'; text-decoration:none; color:#fff; background:var(--blue);
+  padding:9px 18px; border-radius:999px; transition:transform .12s;
+}
+.minuta-btn:hover{transform:translateY(-1px);}
 .eco-links{list-style:none; margin:4px 0 0; padding:0; display:flex; flex-direction:column; gap:1px;}
 .eco-links li a{
   display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink-soft);
@@ -335,10 +340,12 @@ footer{padding:40px 0 60px; color:var(--ink-soft); font-size:13px; max-width:700
         <div class="hero-side">
           <a class="btn btn-solid" href="https://ippuc.org.br/planodiretor/2025/" target="_blank" rel="noopener">Ver o site oficial ↗</a>
 
-          <a class="minuta-card" href="https://minuta-planodiretor.vercel.app/" target="_blank" rel="noopener">
-            <strong>Testar o Dr. Ca PI.Á na Minuta Interativa ↗</strong>
-            <span>Use a senha <b>DFBWA</b> para acessar</span>
-          </a>
+          <div class="minuta-card">
+            <strong>Converse com o Dr. Ca PI.Á</strong>
+            <p>O assistente de IA que traduziu 351 artigos jurídicos para linguagem cidadã está disponível para testar ao vivo, agora, na Minuta Interativa.</p>
+            <span class="pw">Use a senha <b>DFBWA</b> para entrar</span>
+            <a class="minuta-btn" href="https://minuta-planodiretor.vercel.app/" target="_blank" rel="noopener">Acesse a minuta ↗</a>
+          </div>
 
           <ul class="eco-links">
             <li><a href="https://datastudio.google.com/reporting/1c3f82ab-b6ba-4ce3-a363-22bf35a2506e/page/p_r5vsruek0d" target="_blank" rel="noopener">Dashboard, Etapa 3 <span class="mono">bit.ly/pd-etapa3</span> ↗</a></li>
@@ -446,7 +453,6 @@ footer{padding:40px 0 60px; color:var(--ink-soft); font-size:13px; max-width:700
       <p class="crit-sub">Uma jornada cívica híbrida e gamificada</p>
       <p class="body-text" style="margin-top:22px">O projeto aplicou Design Sistêmico para estruturar uma jornada cívica híbrida e gamificada, engajando diferentes perfis sociais. O ecossistema desenhou <mark class="term-hl">dinâmicas lúdicas</mark>, votações diversas e personagens ilustrados que representam as paixões e afetos urbanos no Mapeamento Afetivo do território (sinalizando sentimentos como orgulho ou "onde sinto nojo"/atenção urbana), outros jogos que mapeavam demandas como a "Árvore dos Sonhos" (com desejos nos galhos), "Caminho das Pedras" (com "dificuldades" na estrada) e o "Urbanista Mirim" (cartas temáticas e dinâmicas).</p>
       <p class="body-text">Na esfera digital, o mascote <mark class="term-hl">Dr. Ca PI.Á</mark> atuou como mediador empático, traduzindo 351 artigos jurídicos herméticos em linguagem cidadã e reduzindo a ansiedade cognitiva, convertendo termo jurídico em coautoria cívica fluida.</p>
-      <div class="pull" style="--dot:var(--green)">Personagens e dinâmicas: <b>Mapeamento Afetivo</b>, <b>Árvore dos Sonhos</b>, <b>Caminho das Pedras</b>, <b>Urbanista Mirim</b> e o mascote <b>Dr. Ca PI.Á</b>.</div>
       <div class="learn-more" data-section="Critério: Design"><span class="learn-more-label">Saiba mais</span><a href="https://drive.google.com/file/d/1vMgJ87vajcYQVSlyaaWl8PlmoQ9I20hU/view?usp=sharing" target="_blank" rel="noopener">Como funcionavam as oficinas <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M7 17 17 7M9 7h8v8"/></svg></a><a href="https://drive.google.com/file/d/1YX-A32cRzA_k4SgwIUUeOT5twmjXx4m4/view?usp=sharing" target="_blank" rel="noopener">Como o Dr. Ca PI.Á funciona <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div>
     </section>
 
